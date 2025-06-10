@@ -1,0 +1,244 @@
+Put your HTML text here<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gümrük Müşavirliği - AkGök</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #111827; /* Koyu Arka Plan */
+        color: #f9fafb; /* Açık Yazı Rengi */
+    }
+
+    /* Navigation Styles */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: #1f2937; /* Çok Koyu Gri */
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-left: 30px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #f9fafb;
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #9ca3af; /* Açık Gri */
+    }
+
+    /* Hero Section */
+    .hero {
+        background: url('https://images.unsplash.com/photo-1519389950337-24457dab0b16?ixlib=rb-4.0.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .hero-overlay {
+        background-color: rgba(17, 24, 39, 0.6);
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.8em;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    /* Section Styles */
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #f9fafb;
+}
+
+/* Hizmetler */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.service-card h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.service-card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Hakkımızda */
+.about {
+    line-height: 1.6;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #f9fafb;
+}
+
+/* İletişim */
+.contact {
+    background-color: #1f2937;
+    padding: 40px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h3 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://akgokgumrukleme.com/images/logo.png" alt="AkGök Logo" /> <!-- LOGO_URL yerine kendi logonuzun URL'sini koyabilirsiniz -->
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#anasayfa">Ana Sayfa</a></li>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Ana Banner / Hero -->
+<section class="hero" id="anasayfa">
+    <div class="hero-overlay">
+        <h1>Gümrükleme ve Lojistikte Güvenilir Ortağınız</h1>
+        <p>Sektörde uzman ve güvenilir hizmetler.</p>
+    </div>
+</section>
+
+<!-- Hizmetler Bölümü -->
+<section class="section" id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>Gümrükleme Danışmanlığı</h3>
+            <p>İhracat ve ithalat işlemlerinizde uzman danışmanlık hizmetleri.</p>
+        </div>
+        <div class="service-card">
+            <h3>Lojistik Çözümleri</h3>
+            <p>Hızlı ve güvenli lojistik hizmetleriyle işlerinizi kolaylaştırıyoruz.</p>
+        </div>
+        <div class="service-card">
+            <h3>Belgelendirme ve Raporlama</h3>
+            <p>Gümrük ve lojistik belge işlemlerinde profesyonel destek.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Hakkımızda Bölümü -->
+<section class="section" id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p class="about">
+        AkGök Gümrük Müşavirliği, sektörde yılların deneyimiyle güvenilir ve hızlı hizmetler sunar. Müşteri memnuniyetini ön planda tutarak, gümrük ve lojistik çözümlerinizde en iyi ortağınız olmaya devam ediyoruz.
+    </p>
+</section>
+
+<!-- İletişim Bölümü -->
+<section class="section" id="iletisim">
+    <h2>İletişim</h2>
+    <div class="contact">
+        <h3>İletişim Bilgileri</h3>
+        <p><strong>Adres:</strong> Örnek Mah. No:10, İstanbul</p>
+        <p><strong>Telefon:</strong> +90 123 456 7890</p>
+        <p><strong>Email:</strong> info@akgokgumruk.com</p>
+    </div>
+</section>
+
+</body>
+</html>
